@@ -7,20 +7,20 @@ class I18nConvert < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/i18n-agent/i18n-convert/releases/download/v#{version}/i18n-convert-aarch64-apple-darwin.tar.gz"
-      sha256 "72d0c5d45efc35834df297d70ad0fc2b1bd8412ffe3f7c353bb920dcc29ef228"
+      sha256 "53869998c6cab1665e4ccd59cb84e3311799b627ad55fb62438129ea2cda1826"
     else
       url "https://github.com/i18n-agent/i18n-convert/releases/download/v#{version}/i18n-convert-x86_64-apple-darwin.tar.gz"
-      sha256 "2de4faf38f03d5835d3e618811345de08b4bf8a05dc826f3087dff77bf6752a6"
+      sha256 "fc4a5f6dac978a4fbf34c8c850abfc762523badbfb403f8a544738663e723d77"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/i18n-agent/i18n-convert/releases/download/v#{version}/i18n-convert-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ef9679abff627305f356dd3c7447e65210306d3b28f21ecff542abf1a7936e70"
+      sha256 "43aa526ac3a8c13efacd4b8c7c07c65e7f7347a7e8c8c43a3f6f7c1934e5f203"
     else
       url "https://github.com/i18n-agent/i18n-convert/releases/download/v#{version}/i18n-convert-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9d523de3f4fafaa8d90523a841238b10e7c2af2ee3871227c1b3acfc1ee9bbd5"
+      sha256 "9e559a2aaef94866b445ad142d96fc0dbe8c79664f5c1e1346937ec046a2c4c3"
     end
   end
 
