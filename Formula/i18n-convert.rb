@@ -1,26 +1,26 @@
 class I18nConvert < Formula
   desc "Cross-platform localization file format converter"
   homepage "https://github.com/i18n-agent/i18n-convert"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/i18n-agent/i18n-convert/releases/download/v#{version}/i18n-convert-aarch64-apple-darwin.tar.gz"
-      sha256 "53869998c6cab1665e4ccd59cb84e3311799b627ad55fb62438129ea2cda1826"
+      sha256 "0f9688ce6e9c54c7fa7a0afc9c285a61c0b5cb80f91f4320626e80ab9d11176c"
     else
       url "https://github.com/i18n-agent/i18n-convert/releases/download/v#{version}/i18n-convert-x86_64-apple-darwin.tar.gz"
-      sha256 "fc4a5f6dac978a4fbf34c8c850abfc762523badbfb403f8a544738663e723d77"
+      sha256 "ff1b983dc0f88132083e69e6d53324f9af46fe86319e206499e9ebf1f766aa2a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/i18n-agent/i18n-convert/releases/download/v#{version}/i18n-convert-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "43aa526ac3a8c13efacd4b8c7c07c65e7f7347a7e8c8c43a3f6f7c1934e5f203"
+      sha256 "fb9c5cd058611fde685c6e5e2ca000e3b8068fc01c7e7b5c5a54e6349f712053"
     else
       url "https://github.com/i18n-agent/i18n-convert/releases/download/v#{version}/i18n-convert-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9e559a2aaef94866b445ad142d96fc0dbe8c79664f5c1e1346937ec046a2c4c3"
+      sha256 "11cba12270cb4627f3220b055402e08d16b79ff4fb2b23fb3f10a2df165bb046"
     end
   end
 
